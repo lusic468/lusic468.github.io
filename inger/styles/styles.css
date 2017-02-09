@@ -1,1 +1,72 @@
 /*COBEYL.US/INGER STYLES*/
+
+/*MASTER FOR HOME*/
+#top, #bottom, #left, #right {
+	background: #fac9d2;
+	position: fixed;}
+
+  #left, #right {
+		top: 0;
+		bottom: 0;
+		width: 20px;}
+
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0;
+		right: 0;
+		height: 20px;}
+
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+#header{
+
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  width: 400px;
+  margin-left: 100px;
+  transform: translate(0%,-50%);
+
+
+}
+
+#mainHeader1{
+
+  color: #fa364a;
+  text-align: left;
+  font-family: 'Inknut Antiqua', serif;
+  text-decoration: none;
+  font-weight:400;
+  font-size: 50px;
+
+}
+
+#mainHeader2{
+
+  color: darkgrey;
+  text-align: left;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  text-decoration: none;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 5px;
+  line-height: 40px;
+
+}
+
+#body{
+
+  position: absolute;
+  top:100px;
+  bottom:100px;
+  right: 100px;
+  left: 400px;
+
+  font-family: 'Crimson Text', serif;
+  font-weight: 600;
+
+}
