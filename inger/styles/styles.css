@@ -39,7 +39,7 @@
   font-family: 'Inknut Antiqua', serif;
   text-decoration: none;
   font-weight:400;
-  font-size: 50px;
+  font-size: 54px;
 
 }
 
@@ -49,11 +49,11 @@
   text-align: left;
   font-family: 'Montserrat', Helvetica, sans-serif;
   text-decoration: none;
-  padding-left: 10px;
+  padding-left: 15px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 5px;
-  line-height: 40px;
+  line-height: 36px;
 
 }
 
@@ -67,5 +67,34 @@
 
   font-family: 'Crimson Text', serif;
   font-weight: 600;
+	font-size: 18px;
+	line-height: 32px;
 
+}
+
+h1{
+
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 400;
+	color: #fa364a;
+	font-size: 32px;
+	line-height: 48px;
+
+}
+
+h2{
+
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 32px;
+
+}
+
+h3 {
+
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
 }
