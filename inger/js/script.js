@@ -1,15 +1,9 @@
 /* global $ */
 
+/*
 $(document).ready(function() {
 
-function appendText() {
-      var txt1 = "<link href='https://fonts.googleapis.com/css?family=Inknut+Antiqua:300,400,700&amp;subset=latin-ext' rel='stylesheet'><link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet'><link href='https://fonts.googleapis.com/css?family=Crimson+Text:600,600i,700,700i' rel='stylesheet'><div id='left'></div><div id='right'></div><div id='top'></div><div id='bottom'></div>";
-
-      $("head").append("txt1");
-    }
-  });
-
-  /*$('head').append(<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:300,400,700&amp;subset=latin-ext" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Crimson+Text:600,600i,700,700i" rel="stylesheet"><div id="left"></div><div id="right"></div><div id="top"></div><div id="bottom"></div>);
+  $('head').append(<link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:300,400,700&amp;subset=latin-ext" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Crimson+Text:600,600i,700,700i" rel="stylesheet"><div id="left"></div><div id="right"></div><div id="top"></div><div id="bottom"></div>);
 
   $('body').append(
     <header>
@@ -23,4 +17,5 @@ function appendText() {
       </div>
     </header>
   );
-});*/
+});
+*/
