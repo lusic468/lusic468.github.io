@@ -3,7 +3,8 @@
 /*MASTER FOR HOME*/
 #top, #bottom, #left, #right {
 	background: #fac9d2;
-	position: fixed;}
+	position: fixed;
+	z-index: 10000;}
 
   #left, #right {
 		top: 0;
@@ -64,6 +65,8 @@
   margin-bottom:100px;
   margin-right: 400px;
   margin-left: 400px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 
 	font-family: 'Inknut Antiqua', serif;
   font-weight: 400;
@@ -110,7 +113,7 @@ a:hover{
 }
 
 /*CAROUSEL*/
-.carouselouter{
+/*.carouselouter{
 
 	position: absolute;
 	top: 50%;
@@ -119,13 +122,13 @@ a:hover{
 	transform: translate(0%,-50%);
 	background: lightgrey;
 	overflow: scroll;
-	width: 700px;
+	width: 20000px;
 	max-height: 750px;
 
 }
 
 .carouselinner{
-	width: 700px;
+	width: 20000px;
 }
 
 .carouselimage{
@@ -136,10 +139,60 @@ a:hover{
 	border-color: white;
 
 	display: inline-block;
+	float: left;
 }
 
 carouselimage:hover{
 
 	border-color: #2f2fea;
+
+}*/
+#carouselouter{
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100%;
+	margin-left: 400px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+
+	overflow: hidden;
+	max-height: 750;
+	margin-right: 400px;
+
+}
+
+#carousel{
+
+	height: 100%;
+	background-color: white;
+
+	overflow: scroll;
+	white-space: nowrap;
+
+}
+
+.carouselimage{
+
+	display: inline-block;
+	padding-left: 25px;
+	padding-right: 25px;
+
+}
+
+.carouselimagesize{
+
+	display: inline-block;
+	height: 100%;
+	outline: 15px transparent #2f2fea;
+	outline-offset: -15px;
+
+}
+
+.carouselimage .carouselimagesize:hover {
+
+	outline: solid;
 
 }
