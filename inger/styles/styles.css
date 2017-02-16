@@ -194,3 +194,19 @@ carouselimage:hover{
 	outline: solid;
 
 }
+
+.carouselvideo{
+	display: inline-block;
+	padding-right: 40px;
+}
+
+.carouselvideosize{
+
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	max-height: 750px;
+	outline: 15px transparent #2f2fea;
+	outline-offset: -15px;
+
+}
