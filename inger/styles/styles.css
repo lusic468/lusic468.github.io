@@ -61,10 +61,7 @@
 #body{
 
   position: absolute;
-  margin-top:100px;
-  margin-bottom:100px;
-  margin-right: 400px;
-  margin-left: 400px;
+	margin: 100px 400px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 
