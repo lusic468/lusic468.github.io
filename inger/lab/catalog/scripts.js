@@ -5,6 +5,21 @@ $(document).ready(function(){
 
     $(".locationtext").hide();
 
+    var oldGodsHide = false;
+    var sevenHide = false;
+    var drownedGodHide = false;
+    var horseGodHide = false;
+    var starkHide = false;
+    var arrynHide = false;
+    var greyjoyHide = false;
+    var lannisterHide = false;
+    var baratheonHide = false;
+    var nightswatchHide = false;
+    var lordsHide = false;
+    var heirsHide = false;
+    var knightsHide = false;
+    var advisorsHide = false;
+
     /*REGION TITLE*/
 
     $("img[src='images/mapWall.jpg']").mouseenter(function(){
@@ -33,20 +48,82 @@ $(document).ready(function(){
     });
 
     /*FILTER*/
-    $("#filterLords").click(function(){
+    var clicked = false;
 
-          $("#filterLords").css("text-decoration", "line-through");
+    $("#filterLords").click(function() {
+      console.log("You clicked on LORDS.");
+
+      if (clicked == false) {
+          console.log("You made it!");
+
           $("#lords").each(function(){
-            $(this).hide();
+            $(this).hide("Lords hidden!");
           });
-      });
+          $("#filterLords").css("text-decoration","line-through");
+
+          clicked = true;
+
+      } else{
+          console.log("Lords are back.");
+
+          $("#filterLords").css("text-decoration","none");
+          $("#lords").show("Lords shown");
+
+          clicked = false;
+      }
+    });
+
+    $("#filterHeirs").click(function() {
+      console.log("You clicked on HEIRS.");
+
+      if (clicked == false) {
+            console.log("You made it past HEIRS!");
+
+            $("#heirs").each(function(){
+              $(this).hide("Heirs hidden!");
+            });
+            $("#filterHeirs").css("text-decoration","line-through");
+
+            clicked = true;
+
+        } else{
+            console.log("Heirs are back.");
+
+            $("#filterHeirs").css("text-decoration","none");
+            $("#heirs").show("Heirs shown");
+
+            clicked = false;
+        }
+    });
+
+    $("#filterAdvisors").click(function() {
+      console.log("You clicked on ADVISORS.");
+
+      if (clicked == false) {
+            console.log("You made it past ADVISORS!");
+
+            $("#advisors").html(function(){
+              $(this).hide("Advisors hidden!");
+            });
+            $("#filterAdvisors").css("text-decoration","line-through");
+
+            clicked = true;
+
+        } else{
+            console.log("Advisors are back.");
+
+            $("#filterAdvisors").css("text-decoration","none");
+            $("#advisors").show("Advisors shown");
+
+            clicked = false;
+        }
+    });
 
 
     /*WINTERFELL*/
     $("#markerwinterfell.locationmarker").mouseenter(function(){
       console.log("Marker was invaded.");
       $("#textwinterfell.locationtext").show();
-      $("#textbar.locationtext").show();
     });
     $("#textwinterfell.locationtext").mouseenter(function(){
       console.log("Winterfell is known.");
@@ -66,6 +143,7 @@ $(document).ready(function(){
     $("#markerwall.locationmarker").mouseenter(function(){
       console.log("Marker was invaded.");
       $("#textwall").show();
+      $("#textbar.locationtext").show();
     });
     $("#textwall.locationtext").mouseenter(function(){
       console.log("Castle Black is known.");
@@ -85,6 +163,7 @@ $(document).ready(function(){
     $("#markerpyke.locationmarker").mouseenter(function(){
       console.log("Marker was invaded.");
       $("#textpyke").show();
+      $("#textbar.locationtext").show();
     });
     $("#textpyke.locationtext").mouseenter(function(){
       console.log("Pyke is known.");
@@ -104,6 +183,7 @@ $(document).ready(function(){
     $("#markereyrie.locationmarker").mouseenter(function(){
       console.log("Marker was invaded.");
       $("#texteyrie").show();
+      $("#textbar.locationtext").show();
     });
     $("#texteyrie.locationtext").mouseenter(function(){
       console.log("The Eyrie is known.");
@@ -119,10 +199,31 @@ $(document).ready(function(){
       $("#texteyrie").hide();
     });
 
+    /*THE TWINS*/
+    $("#markertwins.locationmarker").mouseenter(function(){
+      console.log("Marker was invaded.");
+      $("#texttwins").show();
+      $("#textbar.locationtext").show();
+    });
+    $("#texttwins.locationtext").mouseenter(function(){
+      console.log("The Twins is known.");
+      $("#texttwins").show();
+    });
+
+    $("#texttwins.locationtext").mouseleave(function(){
+      console.log("The Twins is unknown.");
+      $("#texttwins").hide();
+    });
+    $("#markertwins.locationmarker").mouseleave(function(){
+      console.log("Marker was ditched.");
+      $("#texttwins").hide();
+    });
+
     /*KING'S LANDING*/
     $("#markerkingslanding.locationmarker").mouseenter(function(){
       console.log("Marker was invaded.");
       $("#textkingslanding").show();
+      $("#textbar.locationtext").show();
     });
     $("#textkingslanding.locationtext").mouseenter(function(){
       console.log("King's Landing is known.");
@@ -136,6 +237,66 @@ $(document).ready(function(){
     $("#markerkingslanding.locationmarker").mouseleave(function(){
       console.log("Marker was ditched.");
       $("#textkingslanding").hide();
+    });
+
+    /*PENTOS*/
+    $("#markerpentos.locationmarker").mouseenter(function(){
+      console.log("Marker was invaded.");
+      $("#textpentos").show();
+      $("#textbar.locationtext").show();
+    });
+    $("#textpentos.locationtext").mouseenter(function(){
+      console.log("Pentos is known.");
+      $("#textpentos").show();
+    });
+
+    $("#textpentos.locationtext").mouseleave(function(){
+      console.log("Pentos is unknown.");
+      $("#textpentos").hide();
+    });
+    $("#markerpentos.locationmarker").mouseleave(function(){
+      console.log("Marker was ditched.");
+      $("#textpentos").hide();
+    });
+
+    /*DOTHRAKI SEA*/
+    $("#markerdothrakisea.locationmarker").mouseenter(function(){
+      console.log("Marker was invaded.");
+      $("#textdothrakisea").show();
+      $("#textbar.locationtext").show();
+    });
+    $("#textdothrakisea.locationtext").mouseenter(function(){
+      console.log("Dothrak is known.");
+      $("#textdothrakisea").show();
+    });
+
+    $("#textdothrakisea.locationtext").mouseleave(function(){
+      console.log("Dothrak is unknown.");
+      $("#textdothrakisea").hide();
+    });
+    $("#markerdothrakisea.locationmarker").mouseleave(function(){
+      console.log("Marker was ditched.");
+      $("#textdothrakisea").hide();
+    });
+
+    /*VILLAGE OF THE LHAZAREEN*/
+    $("#markerlhazareen.locationmarker").mouseenter(function(){
+      console.log("Marker was invaded.");
+      $("#textlhazareen").show();
+      $("#textbar.locationtext").show();
+    });
+    $("#textkingslanding.locationtext").mouseenter(function(){
+      console.log("Lhazareen is known.");
+      $("#textlhazareen").show();
+    });
+
+    $("#textkingslanding.locationtext").mouseleave(function(){
+      console.log("Lhazareen is unknown.");
+      $("#textlhazareen").hide();
+    });
+    $("#markerlhazareen.locationmarker").mouseleave(function(){
+      console.log("Marker was ditched.");
+      $("#textlhazareen").hide();
     });
 
 

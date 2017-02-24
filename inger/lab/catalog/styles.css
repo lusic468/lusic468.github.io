@@ -84,10 +84,8 @@ main{
 .filtermenu{
 
   position: fixed;
-  top: 50%;
-  left: 0%;
+  bottom: 50px;
   margin-left: 50px;
-  transform: translate(0%,-50%);
   width: 200px;
 
   font-family: 'Work Sans', Helvetica, sans-serif;
@@ -175,6 +173,26 @@ main{
   left: 1490px;
 }
 
+#markertwins{
+  top: 1450px;
+  left: 1120px;
+}
+
+#markerpentos{
+  top: 2070px;
+  left: 2190px;
+}
+
+#markerdothrakisea{
+  top: 2360px;
+  left: 3060px;
+}
+
+#markerlhazareen{
+  top: 2480px;
+  left: 4270px;
+}
+
 .locationtext{
   width: 350px;
   max-height: 500px;
@@ -214,6 +232,26 @@ main{
   left: 1490px;
 }
 
+#texttwins{
+  top: 1433px;
+  left: 1120px;
+}
+
+#textpentos{
+  top: 2053px;
+  left: 2190px;
+}
+
+#textdothrakisea{
+  top: 2343px;
+  left: 3060px;
+  }
+
+#textlhazareen{
+  top: 2463px;
+  left: 4270px;
+}
+
       .locationtext h2{
         font-size: 25px;
         font-weight: 600;
@@ -237,6 +275,10 @@ main{
 
       .locationtext a:hover{
           color: black;}
+
+      b{
+        font-weight: 600;
+      }
 
   #textbar{
     width: 300px;
