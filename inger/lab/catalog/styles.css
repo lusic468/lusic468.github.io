@@ -1,0 +1,245 @@
+main{
+
+    font-size: 0;
+
+    min-width: 1280px;
+    min-height: 720px;
+    background-color: lightgrey;
+    margin: 0;
+
+}
+
+/*HEADER*/
+
+.header{
+  margin-left: 50px;
+  width: calc(100% - 100px);
+  padding-top: 50px;
+  text-transform: uppercase;
+  position: fixed;
+
+  z-index: 100;
+}
+
+  .header #mainTitle{
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 5px;
+    color: white;}
+
+  .header #titleLine{
+    width: 100%;
+    height:5px;
+    border-bottom: 5px solid #f53141;
+  }
+
+  .header #regionTitle{
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 5px;
+    color: white;}
+
+/*MAP*/
+
+/*.mapwrapper{
+  background-color: pink;
+  margin: -10px 0 0 -10px;
+  min-width: 1280px;
+  overflow: visible;
+  z-index: 10;
+}*/
+
+.map{
+  position: relative;
+  overflow: scroll;
+  min-width: 5653px;
+  margin: -10px;
+
+  z-index: 10;
+}
+
+.map img{
+  z-index: 20;
+}
+
+.map #westeros{
+  display: inline-block;
+  position: absolute;
+  width: 1986px;
+
+  }
+
+.map #essos{
+  display: inline-block;
+  margin-left: 1986px;
+  width: 3667px;
+}
+
+/*FILTER MENU*/
+
+.filtermenu{
+
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  margin-left: 50px;
+  transform: translate(0%,-50%);
+  width: 200px;
+
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: white;
+  font-size: 15px;
+
+  z-index: 90;
+
+}
+    .filtermenu h1{
+      font-weight: 800;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: 5px;}
+
+    .filtermenu p{
+      letter-spacing: 3px;
+      font-weight: 600;
+    }
+
+    #filterTitle{
+      width: 100px;
+      background: none;
+      cursor: pointer;
+      font-family: 'Work Sans', Helvetica, sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      line-height: 20px;
+      text-align: left;
+      font-size: 15px;
+      color: white;
+      border: none;
+    }
+
+.filter{
+    width: 100%;
+    margin: 5px 0 2px 10px;
+    background: none;
+    cursor: pointer;
+    font-family: 'Work Sans', Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 20px;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+    border: none;
+}
+
+/*LOCATION MARKERS*/
+
+.locationmarker{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #f53141;
+  border-radius: 100%;
+
+  z-index: 50;
+}
+
+#markerwinterfell{
+  top: 760px;
+  left: 1190px;
+}
+
+#markerwall{
+  top: 230px;
+  left: 1410px;
+}
+
+#markerpyke{
+  top: 1610px;
+  left: 720px;
+}
+
+#markereyrie{
+  top: 1590px;
+  left: 1530px;
+}
+
+#markerkingslanding{
+  top: 2050px;
+  left: 1490px;
+}
+
+.locationtext{
+  width: 350px;
+  max-height: 500px;
+  overflow: scroll;
+  position: absolute;
+  padding-left: 40px;
+
+
+  font-family: 'Work Sans', Helvetica, sans-serif;
+  color: white;
+
+  z-index: 40;
+}
+
+#textwinterfell{
+  top: 743px;
+  left: 1190px;
+}
+
+#textwall{
+  top: 210px;
+  left: 1410px;
+}
+
+#textpyke{
+  top: 1593px;
+  left: 720px;
+}
+
+#texteyrie{
+  top: 1573px;
+  left: 1530px;
+}
+
+#textkingslanding{
+  top: 2033px;
+  left: 1490px;
+}
+
+      .locationtext h2{
+        font-size: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+        line-height: 20px;
+        letter-spacing: 3px;
+        margin-bottom: 15px}
+
+      .locationtext p{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 27px;}
+
+      .locationtext mark{
+        background-color: #f53141;
+        color: white;}
+
+      .locationtext a{
+        text-decoration: none;
+        color: white;}
+
+      .locationtext a:hover{
+          color: black;}
+
+  #textbar{
+    width: 300px;
+    border-top: 3px solid white;
+    display: block;
+  }
