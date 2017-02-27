@@ -31,6 +31,7 @@ main{
 
   .header #titleLine{
     width: 100%;
+    margin-bottom: 1px;
     height:5px;
     border-bottom: 5px solid #f53141;
   }
@@ -150,48 +151,39 @@ main{
 
 #markerwinterfell{
   top: 760px;
-  left: 1190px;
-}
+  left: 1190px;}
 
 #markerwall{
   top: 230px;
-  left: 1410px;
-}
+  left: 1410px;}
 
 #markerpyke{
   top: 1610px;
-  left: 720px;
-}
+  left: 720px;}
 
 #markereyrie{
   top: 1590px;
-  left: 1530px;
-}
+  left: 1530px;}
 
 #markerkingslanding{
   top: 2050px;
-  left: 1490px;
-}
+  left: 1490px;}
 
 #markertwins{
   top: 1450px;
-  left: 1120px;
-}
+  left: 1120px;}
 
 #markerpentos{
   top: 2070px;
-  left: 2190px;
-}
+  left: 2190px;}
 
 #markerdothrakisea{
   top: 2360px;
-  left: 3060px;
-}
+  left: 3060px;}
 
 #markerlhazareen{
   top: 2480px;
-  left: 4270px;
-}
+  left: 4270px;}
 
 .locationtext{
   width: 350px;
@@ -209,48 +201,39 @@ main{
 
 #textwinterfell{
   top: 743px;
-  left: 1190px;
-}
+  left: 1190px;}
 
 #textwall{
   top: 210px;
-  left: 1410px;
-}
+  left: 1410px;}
 
 #textpyke{
   top: 1593px;
-  left: 720px;
-}
+  left: 720px;}
 
 #texteyrie{
   top: 1573px;
-  left: 1530px;
-}
+  left: 1530px;}
 
 #textkingslanding{
   top: 2033px;
-  left: 1490px;
-}
+  left: 1490px;}
 
 #texttwins{
   top: 1433px;
-  left: 1120px;
-}
+  left: 1120px;}
 
 #textpentos{
   top: 2053px;
-  left: 2190px;
-}
+  left: 2190px;}
 
 #textdothrakisea{
   top: 2343px;
-  left: 3060px;
-  }
+  left: 3060px;}
 
 #textlhazareen{
   top: 2463px;
-  left: 4270px;
-}
+  left: 4270px;}
 
       .locationtext h2{
         font-size: 25px;

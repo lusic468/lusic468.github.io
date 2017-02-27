@@ -22,25 +22,26 @@
 
     <div class="filtermenu">
       <h1>Filters</h1>
-      <h1 style="font-weight:600; line-height:40px">RELIGION</h1>
+      <h1 style="font-weight:600; line-height:40px" class="filter" id="filterSubtitle">RELIGION</h1>
       <div class="filter" id="filterOldGods">The Old Gods</div>
       <div class="filter" id="filterFaithSeven">The Faith of the Seven</div>
       <div class="filter" id="filterDrownedGod">Drowned God</div>
       <div class="filter" id="filterHorseGod">Horse God</div>
-      <h1 style="font-weight:600; line-height:40px">ALLEGIANCE</h1>
+      <h1 style="font-weight:600; line-height:40px" class="filter" id="filterSubtitle">ALLEGIANCE</h1>
       <div class="filter" id="filterStark">Stark</div>
       <div class="filter" id="filterArryn">Arryn</div>
       <div class="filter" id="filterGreyjoy">Greyjoy</div>
       <div class="filter" id="filterLannister">Lannister</div>
       <div class="filter" id="filterBaratheon">Baratheon</div>
-      <div class="filter" id="filterBaratheon">Night&rsquo;s Watch</div>
+      <div class="filter" id="filterNightsWatch">Night&rsquo;s Watch</div>
       <div class="filter" id="filterRealm">The Realm</div>
-      <h1 style="font-weight:600; line-height:40px">ROLE</h1>
+      <h1 style="font-weight:600; line-height:40px" class="filter" id="filterSubtitle">ROLE</h1>
       <div class="filter" id="filterLords">Lords</div>
       <div class="filter" id="filterHeirs">Heirs</div>
       <div class="filter" id="filterKnights">Knights</div>
       <div class="filter" id="filterAdvisors">Advisors</div>
       <div class="filter" id="filterCrows">Crows</div>
+      <div class="filter" id="filterWildlings">Wildlings</div>
       <div class="filter" id="filterCommoners">Commoners</div>
       <div class="filter" id="filterAnimals">Animals</div>
       <div class="filter" id="filterOthers">The Others</div>
@@ -59,27 +60,26 @@
                     <h2>Castle Black</h2>
                     <div class="locationtext" id="textbar"></div><br>
                     <p><mark>An ancient stronghold and the headquarters of the Night's Watch, Castle Black is one of only three still manned by the Night's Watch despite there being nineteen strongholds along the Wall.</mark><br>
-                    &mdash;<br><mark>
-                    <b>LORDS:</b>
-                    <a href="people/commandermormont.html" id="lords" id="nightswatch" id="oldgods"> Lord Commander Mormont /</a>
-                    <a href="people/allisterthorne.html" id="lords" id="nightswatch" id="oldgods"> Ser Allister Thorne /</a>
-                    <br><b>CROWS:</b>
-                    <a href="people/jonsnow.html" id="crows" id="nightswatch" id="stark" id="oldgods"> Jon Snow /</a>
-                    <a href="people/benjenstark.html" id="crows" id="nightswatch" id="stark" id="oldgods"> Benjen Stark /</a>
-                    <a href="people/pypar.html" id="crows" id="nightswatch" id="oldgods"> Pypar /</a>
-                    <a href="people/samwelltarly.html" id="crows" id="nightswatch" id="oldgods"> Samwell Tarly /</a>
-                    <br><b>ADVISORS:</b>
-                    <a href="people/aemon.html" id="advisors" id="nightswatch" id="oldgods"> Maester Aemon /</a>
-                    <br><b>ANIMALS:</b>
-                    <a href="people/ghost.html" id="animals" id="nightswatch" id="direwolf" id="stark"> Ghost /</a>
-                    <br><b>THE OTHERS:</b>
-                    <a href="people/aemon.html" id="others" id="nightswatch" id="oldgods"> The Others /</a>
+                    &mdash;<br>
+                    <mark><b>LORDS</b></mark>
+                    <mark><a href="people/commandermormont.html" class="lords nightswatch oldgods"> Lord Commander Mormont</a></mark>
+                    <mark><a href="people/allisterthorne.html" class="lords nightswatch oldgods"> Ser Allister Thorne</a></mark>
+                    <br><mark><b>CROWS</b></mark>
+                    <mark><a href="people/jonsnow.html" class="crows nightswatch stark oldgods"> Jon Snow</a></mark>
+                    <mark><a href="people/benjenstark.html" class="crows nightswatch stark oldgods"> Benjen Stark</a></mark>
+                    <mark><a href="people/pypar.html" class="crows nightswatch oldgods"> Pypar</a></mark>
+                    <mark><a href="people/samwelltarly.html" class="crows nightswatch oldgods"> Samwell Tarly</a></mark>
+                    <br><mark><b>ADVISORS</b></mark>
+                    <mark><a href="people/aemon.html" class="advisors nightswatch oldgods"> Maester Aemon</a></mark>
+                    <br><mark><b>ANIMALS</b></mark>
+                    <mark><a href="people/ghost.html" class="animals nightswatch direwolf stark"> Ghost</a></mark>
+                    <br><mark><b>THE OTHERS</b></mark>
+                    <mark><a href="people/theothers.html" class="others nightswatch oldgods"> The Others</a></mark>
                     </mark></p>
                   </div>
 
-                <img src="images/mapWall.jpg">
+                  <img src="images/mapWall.jpg">
                 </div>
-
                 <div>
 
                   <div class="locationmarker" id="markerwinterfell"></div>
@@ -87,32 +87,33 @@
                         <h2>Winterfell</h2>
                         <div class="locationtext" id="textbar"></div><br>
                         <p><mark>The ancestral castle and seat of power of House Stark, Winterfell is considered to be the capital of the North.</mark><br>
-                        &mdash;<br><mark>
-                        <b>LORDS:</b>
-                        <a href="people/eddardstark.html" id="lords" id="stark" id="oldgods"> Eddard Stark /</a>
-                        <a href="people/catelyntully.html" id="lords" id="stark" id="faithseven"> Catelyn Tully /</a>
-                        <br><b>HEIRS:</b>
-                        <a href="people/robbstark.html" id="heirs" id="stark" id="oldgods"> Robb Stark /</a>
-                        <a href="people/sansastark.html" id="heirs" id="stark" id="oldgods"> Sansa Stark /</a>
-                        <a href="people/aryastark.html" id="heirs" id="stark"> Arya Stark /</a>
-                        <a href="people/branstark.html" id="heirs" id="stark" id="oldgods"> Bran Stark /</a>
-                        <a href="people/rickonstark.html" id="heirs" id="stark" id="oldgods"> Rickon Stark /</a>
-                        <a href="people/theongreyjoy.html" id="heirs" id="greyjoy" id="drownedgod"> Theon Greyjoy (Ward) /</a>
-                        <br><b>ADVISORS:</b>
-                        <a href="people/luwin.html" id="advisors" id="stark" id="oldgods"> Maester Luwin /</a>
-                        <a href="people/rodrik.html" id="advisors" id="stark" id="oldgods"> Ser Rodrik Cassel /</a>
-                        <br>WILDLINGS:
-                        <a href="people/osha.html" id="wildlings" id="stark" id="oldgods"> Osha /</a>
-                        <br><b>ANIMALS:</b>
-                        <a href="people/greywind.html" id="animals" id="stark" id="direwolf"> Grey Wind /</a>
-                        <a href="people/lady.html" id="animals" id="stark" id="direwolf"> Lady /</a>
-                        <a href="people/nymeria.html" id="animals" id="stark" id="direwolf"> Nymeria /</a>
-                        <a href="people/summer.html" id="animals" id="stark" id="direwolf"> Summer /</a>
-                        <a href="people/shaggydog.html" id="animals" id="stark" id="direwolf"> Shaggydog /</a>
+                        &mdash;<br>
+                        <mark><b>LORDS</b></mark>
+                        <mark><a href="people/eddardstark.html" class="lords stark oldgods">Eddard Stark</a></mark>
+                        <mark><a href="people/catelyntully.html" class="lords stark tully faithseven">Catelyn Tully</a></mark>
+                        <br><mark><b>HEIRS</b></mark>
+                        <mark><a href="people/robbstark.html" class="heirs stark oldgods"> Robb Stark</a></mark>
+                        <mark><a href="people/sansastark.html" class="heirs stark oldgods"> Sansa Stark</a></mark>
+                        <mark><a href="people/aryastark.html" class="heirs stark"> Arya Stark</a></mark>
+                        <mark><a href="people/branstark.html" class="heirs stark oldgods"> Bran Stark</a></mark>
+                        <mark><a href="people/rickonstark.html" class="heirs stark oldgods"> Rickon Stark</a></mark>
+                        <mark><a href="people/theongreyjoy.html" class="heirs greyjoy drownedgod"> Theon Greyjoy (Ward)</a></mark>
+                        <br><mark><b>ADVISORS</b></mark>
+                        <mark><a href="people/luwin.html" class="advisors stark oldgods"> Maester Luwin</a></mark>
+                        <mark><a href="people/rodrikcassel.html" class="advisors stark oldgods"> Ser Rodrik Cassel</a></mark>
+                        <br><mark><b>WILDLINGS</b></mark>
+                        <mark><a href="people/osha.html" class="wildlings stark oldgods"> Osha</a></mark>
+                        <br><mark><b>ANIMALS</b></mark>
+                        <mark><a href="people/greywind.html" class="animals stark direwolf"> Grey Wind</a></mark>
+                        <mark><a href="people/lady.html" class="animals stark direwolf"> Lady</a></mark>
+                        <mark><a href="people/nymeria.html" class="animals stark direwolf"> Nymeria</a></mark>
+                        <mark><a href="people/summer.html" class="animals stark direwolf"> Summer</a></mark>
+                        <mark><a href="people/shaggydog.html" class="animals stark direwolf"> Shaggydog</a></mark>
                         </mark></p>
                   </div>
 
-                <img src="images/mapNorth.jpg">
+                  <img src="images/mapNorth.jpg">
+
                 </div>
                 <div>
 
@@ -121,9 +122,9 @@
                     <h2>Pyke</h2>
                     <div class="locationtext" id="textbar"></div><br>
                     <p><mark>An ancient stronghold located on the island of the same name, Pyke is the seat of House Greyjoy whose Lord Reaper sits the Seastone Chair.<br></mark>
-                    &mdash;<br><mark>
-                    <b>HEIRS:</b>
-                    <a href="people/theongreyjoy.html" id="heirs" id="greyjoy" id="drownedgod"> Theon Greyjoy /</a>
+                    &mdash;<br>
+                    <mark><b>HEIRS</b></mark>
+                    <mark><a href="people/theongreyjoy.html" class="heirs greyjoy drownedgod"> Theon Greyjoy</a></mark>
                     </mark></p>
                   </div>
 
@@ -132,14 +133,14 @@
                     <h2>The Eyrie</h2>
                     <div class="locationtext" id="textbar"></div><br>
                     <p><mark>An ancient castle and seat of House Arryn, the Eyrie is the smallest compared to the seats of other Great Houses in Westeros, but it&rsquo;s considered impregnable to attack nonetheless.</mark><br>
-                    &mdash;<br><mark>
-                    <b>LORDS:</b>
-                    <a href="people/jonarryn.html" id="lords" id="arryn" id="faithseven"> Jon Arryn /</a>
-                    <a href="people/lysaarryn.html" id="lords" id="arryn" id="faithseven"> Lysa Arryn /</a>
-                    <br><b>HEIRS:</b>
-                    <a href="people/robertarryn.html" id="heirs" id="arryn" id="faithseven"> Robert Arryn /</a>
-                    <br><b>COMMONERS:</b>
-                    <a href="people/bronn.html" id="commoners" id="arryn" id="lannister"> Bronn /</a>
+                    &mdash;<br>
+                    <mark><b>LORDS</b></mark>
+                    <mark><a href="people/jonarryn.html" class="lords arryn faithseven"> Jon Arryn</a></mark>
+                    <mark><a href="people/lysaarryn.html" class="lords arryn faithseven"> Lysa Arryn</a></mark>
+                    <br><mark><b>HEIRS</b></mark>
+                    <mark><a href="people/robertarryn.html" class="heirs arryn faithseven"> Robert Arryn</a></mark>
+                    <br><mark><b>COMMONERS</b></mark>
+                    <mark><a href="people/bronn.html" class="commoners arryn lannister"> Bronn</a></mark>
                     </mark></p>
                   </div>
 
@@ -148,15 +149,14 @@
                     <h2>The Twins</h2>
                     <div class="locationtext" id="textbar"></div><br>
                     <p><mark>One of the most formidable strongholds of the Seven Kingdoms, the Twins (or The Crossing) is the seat of House Frey. The Crossing consists of two identical castles and a tower in the middle of their bridge.</mark><br>
-                    &mdash;<br><mark>
-                    <b>LORDS:</b>
-                    <a href="people/walderfrey.html" id="lords" id="arryn" id="faithseven"> Walder Frey /</a>
+                    &mdash;<br>
+                    <mark><b>LORDS</b></mark>
+                    <mark><a href="people/walderfrey.html" class="lords lannister frey faithseven"> Walder Frey</a></mark>
                     </mark></p>
                   </div>
 
                   <img src="images/mapRiverlands.jpg">
                 </div>
-
                 <div>
 
                   <div class="locationmarker" id="markerkingslanding"></div>
@@ -164,35 +164,34 @@
                     <h2>King&rsquo;s Landing</h2>
                     <div class="locationtext" id="textbar"></div><br>
                     <p><mark>The capital of the Seven Kingdoms, King's Landing is the site of the Iron Throne and the Red Keep, which is the seat of the king, Robert I.</mark><br>
-                    &mdash;<br><mark>
-                    <b>LORDS:</b>
-                    <a href="people/robertbaratheon.html" id="lords" id="baratheon" id="faithseven"> Robert Baratheon /</a>
-                    <a href="people/cerseilannister.html" id="lords" id="baratheon" id="lannister" id="faithseven"> Cersei Lannister /</a>
-                    <a href="people/tyrionlannister.html" id="lords" id="lannister" id="faithseven"> Tyrion Lannister /</a>
-                    <a href="people/renlybaratheon.html" id="lords" id="baratheon" id="faithseven"> Renly Baratheon /</a>
-                    <br><b>HEIRS:</b>
-                    <a href="people/joffreybaratheon.html" id="heirs" id="baratheon" id="faithseven"> Joffrey Baratheon /</a>
-                    <a href="people/myrcellabaratheon.html" id="heirs" id="baratheon" id="faithseven"> Myrcella Baratheon /</a>
-                    <a href="people/tommenbaratheon.html" id="heirs" id="baratheon" id="faithseven"> Tommen Baratheon /</a>
-                    <br><b>KNIGHTS:</b>
-                    <a href="people/jaimelannister.html" id="knights" id="lannister" id="baratheon" id="faithseven"> Jaime Lannister /</a>
-                    <a href="people/jaimelannister.html" id="knights" id="baratheon" id="faithseven"> Sandor Clegane /</a>
-                    <a href="people/gregorclegane.html" id="knights" id="lannister" id="faithseven"> Gregor Clegane /</a>
-                    <a href="people/barristanselmy.html" id="knights" id="baratheon" id="oldgods"> Ser Barristan Selmy /</a>
-                    <a href="people/ilynpayne.html" id="knights" id="lannister" id="baratheon" id="faithseven"> Ser Ilyn Payne /</a>
-                    <br><b>ADVISORS:</b>
-                    <a href="people/petyrbaelish.html" id="advisors" id="tully" id="realm" id="faithseven"> Petyr Baelish /</a>
-                    <a href="people/varys.html" id="advisors" id="realm" id="faithseven"> Lord Varys /</a>
-                    <a href="people/pycelle.html" id="advisors" id="lannister" id="faithseven"> Grand Maester Pycelle /</a>
-                    <br><b>COMMONERS:</b>
-                    <a href="people/shae.html" id="commoners" id="lannister"> Shae /</a>
+                    &mdash;<br>
+                    <mark><b>LORDS</b></mark>
+                    <mark><a href="people/robertbaratheon.html" class="lords baratheon faithseven"> Robert Baratheon</a></mark>
+                    <mark><a href="people/cerseilannister.html" class="lords baratheon lannister faithseven"> Cersei Lannister</a></mark>
+                    <mark><a href="people/tyrionlannister.html" class="lords lannister faithseven"> Tyrion Lannister</a></mark>
+                    <mark><a href="people/renlybaratheon.html" class="lords baratheon faithseven"> Renly Baratheon</a></mark>
+                    <br><mark><b>HEIRS</b></mark>
+                    <mark><a href="people/joffreybaratheon.html" class="heirs baratheon faithseven"> Joffrey Baratheon</a></mark>
+                    <mark><a href="people/myrcellabaratheon.html" class="heirs baratheon faithseven"> Myrcella Baratheon</a></mark>
+                    <mark><a href="people/tommenbaratheon.html" class="heirs baratheon faithseven"> Tommen Baratheon</a></mark>
+                    <br><mark><b>KNIGHTS</b></mark>
+                    <mark><a href="people/jaimelannister.html" class="knights lannister baratheon faithseven"> Jaime Lannister</a></mark>
+                    <mark><a href="people/sandorclegane.html" class="knights baratheon faithseven"> Sandor Clegane</a></mark>
+                    <mark><a href="people/gregorclegane.html" class="knights lannister faithseven"> Gregor Clegane</a></mark>
+                    <mark><a href="people/barristanselmy.html" class="knights baratheon oldgods"> Ser Barristan Selmy</a></mark>
+                    <mark><a href="people/ilynpayne.html" class="knights lannister baratheon faithseven"> Ser Ilyn Payne</a></mark>
+                    <br><mark><b>ADVISORS</b></mark>
+                    <mark><a href="people/petyrbaelish.html" class="advisors tully realm faithseven"> Petyr Baelish</a></mark>
+                    <mark><a href="people/varys.html" class="advisors realm faithseven"> Lord Varys</a></mark>
+                    <mark><a href="people/pycelle.html" class="advisors lannister faithseven"> Grand Maester Pycelle</a></mark>
+                    <br><mark><b>COMMONERS</b></mark>
+                    <mark><a href="people/shae.html" class="commoners lannister"> Shae</a></mark>
                     </mark></p>
                   </div>
 
                   <img src="images/mapSouth.jpg">
                 </div>
             </div>
-
             <div id="essos">
               <img src="images/mapShiveringSea.jpg"><br>
 
@@ -203,13 +202,13 @@
                   <h2>Pentos</h2>
                   <div class="locationtext" id="textbar"></div><br>
                   <p><mark>One of the Free Cities of western Essos, Pentos was founded by merchants, traders, seafarers, and farmers from the Valyrian Freehold as a trading outpost.<br></mark>
-                  &mdash;<br><mark>
-                  <b>LORDS:</b>
-                  <a href="people/illyriomopatis.html" id="lords" id="realm"> Illyrio Mopatis /</a>
-                  <a href="people/daenerystargaryen.html" id="lords" id="targaryen"> Daenerys Targaryen /</a>
-                  <a href="people/viserystargaryen.html" id="lords" id="targaryen"> Viserys Targaryen /</a>
-                  <br><b>KNIGHTS:</b>
-                  <a href="people/jorahmormont.html" id="lords" id="targaryen" id="oldgods"> Ser Jorah Mormont /</a>
+                  &mdash;<br>
+                  <mark><b>LORDS</b></mark>
+                  <mark><a href="people/illyriomopatis.html" class="lords realm"> Illyrio Mopatis</a></mark>
+                  <mark><a href="people/daenerystargaryen.html" class="lords targaryen"> Daenerys Targaryen</a></mark>
+                  <mark><a href="people/viserystargaryen.html" class="lords targaryen"> Viserys Targaryen</a></mark>
+                  <br><mark><b>KNIGHTS</b></mark>
+                  <mark><a href="people/jorahmormont.html" class="lords targaryen oldgods"> Ser Jorah Mormont</a></mark>
                   </mark></p>
                 </div>
 
@@ -218,13 +217,13 @@
                   <h2>The Dothraki Sea</h2>
                   <div class="locationtext" id="textbar"></div><br>
                   <p><mark>Also known as the Haunted Lands and the Great Desolation, the Dothraki Sea is a landscape of steppes and plains home to the nomadic Dothraki equestrian people, who constantly battle each other and raid surrounding lands.<br></mark>
-                  &mdash;<br><mark>
-                  <b>LORDS:</b>
-                  <a href="people/drogo.html" id="lords" id="horsegod" id="targaryen"> Khal Drogo /</a>
-                  <br><b>BLOODRIDERS:</b>
-                  <a href="people/jhogo.html" id="knights" id="targaryen" id="oldgods"> Jhogo /</a>
-                  <a href="people/aggo.html" id="knights" id="targaryen" id="oldgods"> Aggo /</a>
-                  <a href="people/rhakaro.html" id="knights" id="targaryen" id="oldgods"> Rhakaro /</a>
+                  &mdash;<br>
+                  <mark><b>LORDS</b></mark>
+                  <mark><a href="people/drogo.html" class="lords horsegod targaryen"> Khal Drogo</a></mark>
+                  <br><mark><b>BLOODRIDERS</b></mark>
+                  <mark><a href="people/jhogo.html" class="knights targaryen oldgods"> Jhogo</a></mark>
+                  <mark><a href="people/aggo.html" class="knights targaryen oldgods"> Aggo</a></mark>
+                  <mark><a href="people/rhakaro.html" class="knights targaryen oldgods"> Rhakaro</a></mark>
                   </mark></p>
                 </div>
 
@@ -233,13 +232,13 @@
                   <h2>Village of the Lhazareen</h2>
                   <div class="locationtext" id="textbar"></div><br>
                   <p><mark>Located west of Lhazar, the Lhazareen camps, who are home to peaceful sheep herders, are frequently raided for slaves by the Dothraki, who refer to them as <em>haesh rakhi</em> or Lamb Men.<br></mark>
-                  &mdash;<br><mark>
-                  <b>COMMONERS:</b>
-                  <a href="people/mirri.html" id="commoners" id="realm" id="horsegod"> Mirri Maz Duur /</a>
-                  <br><b>ANIMALS:</b>
-                  <a href="people/viserion.html" id="animals" id="dragon" id="targaryen"> Viserion /</a>
-                  <a href="people/rhaegal.html" id="animals" id="dragon" id="targaryen"> Rhaegal /</a>
-                  <a href="people/drogon.html" id="animals" id="dragon" id="targaryen"> Drogon /</a>
+                  &mdash;<br>
+                  <mark><b>COMMONERS</b></mark>
+                  <mark><a href="people/mirri.html" class="commoners realm sheepgod"> Mirri Maz Duur</a></mark>
+                  <br><mark><b>ANIMALS</b></mark>
+                  <mark><a href="people/viserion.html" class="animals dragon targaryen"> Viserion</a></mark>
+                  <mark><a href="people/rhaegal.html" class="animals dragon targaryen"> Rhaegal</a></mark>
+                  <mark><a href="people/drogon.html" class="animals dragon targaryen"> Drogon</a></mark>
                   </mark></p>
                 </div>
 
@@ -248,26 +247,7 @@
               </div>
             </div>
 
-          <!--</div>
-          <div MARKER>
-          </div>
-          <div TEXTBOX>
-          </div>
-
-          <div MARKER>
-          </div>
-          <div TEXTBOX>
-          </div>
-
-          <div MARKER>
-          </div>
-          <div TEXTBOX>
-          </div>-->
-
         </div>
-
-    <section **MAP ARROWS**>
-    </section>
 
   </main>
 
