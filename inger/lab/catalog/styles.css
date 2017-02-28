@@ -186,12 +186,10 @@ main{
   left: 4270px;}
 
 .locationtext{
+  font-size: 0;
   width: 350px;
-  max-height: 500px;
-  overflow: scroll;
   position: absolute;
   padding-left: 40px;
-
 
   font-family: 'Work Sans', Helvetica, sans-serif;
   color: white;
@@ -199,12 +197,38 @@ main{
   z-index: 40;
 }
 
+.locationtext .locationheader{
+  position: absolute;
+  top: -75px;
+  left: 0;
+  padding-left: 40px;
+  width: 390px;
+
+  z-index: 60;
+  }
+
+  .locationheader h2{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;}
+
+  .locationtext #wallcontainer{
+    width: calc(100%);
+    position: absolute;
+    height: calc(30vh);
+    top: 10px;
+    overflow: scroll;
+    vertical-align: bottom;}
+
 #textwinterfell{
-  top: 743px;
+  top: 785px;
   left: 1190px;}
 
 #textwall{
-  top: 210px;
+  top: 255px;
   left: 1410px;}
 
 #textpyke{
@@ -235,18 +259,13 @@ main{
   top: 2463px;
   left: 4270px;}
 
-      .locationtext h2{
-        font-size: 25px;
-        font-weight: 600;
-        text-transform: uppercase;
-        line-height: 20px;
-        letter-spacing: 3px;
-        margin-bottom: 15px}
+
 
       .locationtext p{
         font-size: 20px;
         font-weight: 300;
-        line-height: 27px;}
+        line-height: 27px;
+        margin: auto 0;}
 
       .locationtext mark{
         background-color: #f53141;
@@ -263,8 +282,8 @@ main{
         font-weight: 600;
       }
 
-  #textbar{
-    width: 300px;
+  .locationtext #textbar{
+    width: 100%;
     border-top: 3px solid white;
-    display: block;
+    margin-bottom: 22px;
   }

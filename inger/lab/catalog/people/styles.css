@@ -15,7 +15,7 @@
         font-size: 25px;
         line-height: 25px;
         letter-spacing: 5px;
-        margin-left: -3px;
+        margin-left: -5px;
         }
 
       .header #titleLine{
@@ -39,10 +39,10 @@ main{
 
   font-size: 0;
 
-  width: calc(100% - 140px);
+  width: calc(100% - 110px);
   min-width: 600px;
   height: calc(100% - 500px);
-  margin: auto 50px auto 120px;
+  margin: auto 50px auto 90px;
   padding-top: 175px;
 }
 
@@ -126,14 +126,15 @@ main{
 
 .arrow {
   position: absolute;
-  margin-left: -40px;
+  margin-left: -60px;
+  margin-top: -14px;
   vertical-align: top;
 
 }
     .arrow a{
       font-family: 'Work Sans', Helvetica, sans-serif;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 25px;
       color: black;
       text-decoration: none;
     }
