@@ -215,7 +215,7 @@ main{
     letter-spacing: 3px;
     margin-bottom: 20px;}
 
-  .locationtext #wallcontainer{
+  .locationtext #container{
     width: calc(100%);
     position: absolute;
     height: calc(30vh);
@@ -232,31 +232,31 @@ main{
   left: 1410px;}
 
 #textpyke{
-  top: 1593px;
+  top: 1635px;
   left: 720px;}
 
 #texteyrie{
-  top: 1573px;
+  top: 1615px;
   left: 1530px;}
 
 #textkingslanding{
-  top: 2033px;
+  top: 2075px;
   left: 1490px;}
 
 #texttwins{
-  top: 1433px;
+  top: 1475px;
   left: 1120px;}
 
 #textpentos{
-  top: 2053px;
+  top: 2095px;
   left: 2190px;}
 
 #textdothrakisea{
-  top: 2343px;
+  top: 2385px;
   left: 3060px;}
 
 #textlhazareen{
-  top: 2463px;
+  top: 2475px;
   left: 4270px;}
 
 
