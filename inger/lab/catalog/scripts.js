@@ -505,7 +505,6 @@ $(document).ready(function(){
 
 
 /*MARKER VIEW TOGGLE*/
-
 /*WINTERFELL*/
     $("#markerwinterfell.locationmarker").mouseenter(function(){
       console.log("Marker was invaded.");
@@ -685,34 +684,4 @@ $(document).ready(function(){
       $("#textlhazareen").hide();
     });
 
-
-
-
-
 });
-
-
-    /*function filter(){
-        var filter = $("#filter").val(),
-
-            oldgods = $('#oldgods');
-
-            lords = $('#lords');
-            heirs = $('#heirs');
-            knights = $('#knights');
-            advisors = $('#advisors');
-            commoners = $('#commoners');
-            wildlings = $('#wildlings');
-            animals = $('#animals');
-            others = $('#others');
-
-        lords.show();
-
-        if (filter != '')
-            lords.filter('.'+filter).hide();
-            heirs.filter('.'+filter).hide();
-          }
-
-
-});
-*/
