@@ -247,6 +247,29 @@ $(document).ready(function(){
       }
     });
 
+/*TARGARYEN*/
+    var clickedTargaryen = false;
+    $("#filterTargaryen").click(function() {
+      console.log("You clicked on targaryen.");
+
+      if (clickedTargaryen == false) {
+        console.log("You made it!");
+
+        $(".targaryen").hide("targaryen hidden!");
+        $("#filterTargaryen").css("text-decoration","line-through");
+
+        clickedTargaryen = true;
+
+      } else{
+        console.log("targaryen are back.");
+
+        $("#filterTargaryen").css("text-decoration","none");
+        $(".targaryen").show("targaryen shown");
+
+        clickedTargaryen = false;
+      }
+    });
+
 /*NIGHT'S WATCH*/
     var clickedNightsWatch = false;
     $("#filterNightsWatch").click(function() {
