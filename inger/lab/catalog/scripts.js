@@ -4,8 +4,64 @@ $(document).ready(function(){
   console.log("The page loaded.");
 
     $(".locationtext").hide();
+    $(".filter").hide();
+});
+
+$(document).ready(function(){
+  
+/*TUTORIAL*/
+    $("#close").click(function(){
+      $(".tutorialouter").remove();
+      $(".tutorialinner").remove();
+    });
+
 
 /*FILTER TOGGLE*/
+    $("#filterreligion").click(function(){
+      console.log("The religion header toggled.");
+
+      $("#filterOldGods").toggle();
+      $("#filterFaithSeven").toggle();
+      $("#filterDrownedGod").toggle();
+      $("#filterHorseGod").toggle();
+
+    });
+
+    $("#filterallegiance").click(function(){
+      console.log("The allegiance header toggled.");
+
+      $("#filterStark").toggle();
+      $("#filterArryn").toggle();
+      $("#filterGreyjoy").toggle();
+      $("#filterLannister").toggle();
+      $("#filterBaratheon").toggle();
+      $("#filterTargaryen").toggle();
+      $("#filterNightsWatch").toggle();
+      $("#filterRealm").toggle();
+
+    });
+
+    $("#filterrole").click(function(){
+      console.log("The role header toggled.");
+
+      $("#filterLords").toggle();
+      $("#filterHeirs").toggle();
+      $("#filterKnights").toggle();
+      $("#filterAdvisors").toggle();
+      $("#filterCrows").toggle();
+      $("#filterWildlings").toggle();
+      $("#filterCommoners").toggle();
+      $("#filterAnimals").toggle();
+      $("#filterOthers").toggle();
+
+    });
+
+    $("#filterhead").click(function(){
+      console.log("The religion header toggled.");
+
+      $(".filter").toggle();
+
+    });
 
 
 /*REGION TITLE*/

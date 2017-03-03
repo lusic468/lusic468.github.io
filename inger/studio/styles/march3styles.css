@@ -1,0 +1,94 @@
+@font-face{
+  font-family: "Sentinel", serif;
+  src: url('assets/fonts/Sentinel-Book.otf')
+  format('open-type');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Sentinel", serif;
+  src: url('assets/fonts/Sentinel-BookItalic.otf')
+  format('open-type');
+  font-style: oblique;
+  font-weight: 400;
+}
+@font-face{
+  font-family: "Sentinel", serif;
+  src: url('assets/fonts/Sentinel-Semibold.otf')
+  format('open-type');
+  font-weight: 600;
+}
+@font-face{
+  font-family: "Sentinel", serif;
+  src: url('assets/fonts/Sentinel-SemiboldItalic.otf')
+  format('open-type');
+  font-weight: 600;
+  font-style: oblique;
+}
+@font-face{
+  font-family: "Maison Neue", serif;
+  src: url('assets/fonts/maisonneuebook.ttf')
+  format('true-type');
+  font-weight: 400;
+}
+@font-face{
+  font-family: "Maison Neue", serif;
+  src: url('assets/fonts/maisonneuebookitalic.ttf')
+  format('true-type');
+  font-style: oblique;
+  font-weight: 400;
+}
+@font-face{
+  font-family: "Maison Neue", serif;
+  src: url('assets/fonts/maison-neue-bold.ttf')
+  format('true-type');
+  font-weight: 600;
+}
+@font-face{
+  font-family: "Maison Neue", serif;
+  src: url('assets/fonts/maison-neue-bold-italic.otf')
+  format('open-type');
+  font-weight: 600;
+  font-style: oblique;
+}
+
+.body{
+  margin: 100px 350px;
+  overflow: scroll;
+}
+
+.copy{
+  display: inline-block;
+}
+
+
+img{
+  width: 60%;
+  display: inline-block;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+p { /* replace with your selector */
+	font-family: "Sole Serif Text Text Light", "Sentinel", serif;
+	font-weight: 400;
+	font-style: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 20px;
+  line-height: 32px;
+}
+h3 { /* replace with your selector */
+	font-family: "Sole Serif Big Display Big Display Light", "Sentinel", serif;
+	font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+}
+h1 { /* replace with your selector */
+	font-family: "Sole Serif Big Display Big Display Regular", "Sentinel", serif;
+	font-weight: 600;
+	font-style: normal;
+  text-align: center;
+  font-size: 72px;
+  line-height: 80px;
+}
