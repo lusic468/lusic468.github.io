@@ -8,7 +8,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  
+
 /*TUTORIAL*/
     $("#close").click(function(){
       $(".tutorialouter").remove();
