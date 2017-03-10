@@ -1,0 +1,151 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  position: absolute;
+  font-size: 0;
+  width: calc(80vw);
+  min-width: 300px;
+  height: calc(80vh);
+  margin: 10vh 10vw;
+
+  }
+
+.deathlytitle{
+  position: absolute;
+  left:50%;
+  width: 100%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  color: black;
+  font-weight: 400;
+  top: -8vh;
+}
+
+      .deathlytitle h1{
+        font-size: 30px;
+        line-height: 0;
+      }
+      .deathlytitle h2{
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+#elderwand, #resurrectionstone, #invisibilitycloak, #maintitle {
+  display: block;
+}
+
+.resurrectionstone{
+  position: absolute;
+  display: block;
+  width: 63%;
+  height: 63%;
+  border-radius: 100%;
+  border: 10px solid #ffcd2f;
+  background-color: transparent;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 4;
+}
+
+.elderwand{
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 98.5%;
+  background-color: #eb212e;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 5;
+}
+
+.cloak {
+    display: block;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border-bottom: 10px solid #3a4de2;
+
+    z-index: 6;
+
+}
+
+.cloakleft {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='0' x2='100%' y2='100%' stroke='#3a4de2' stroke-width='10'/></svg>") no-repeat;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.cloakright {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><line x1='0' y1='0' x2='100%' y2='100%' stroke='#3a4de2' stroke-width='10'/></svg>") no-repeat;
+}
+
+/*Elder Wand*/
+@media (max-width:450px) {
+  .cloak, .resurrectionstone{
+    display: none;
+  }
+  #resurrectionstone, #invisibilitycloak{
+    display: none;
+  }
+}
+
+/*Resurrection Stone*/
+@media (min-width: 451px) and (max-width:750px){
+  .cloak, .elderwand{
+    display: none;
+  }
+  #elderwand, #invisibilitycloak{
+    display: none;
+  }
+}
+
+/*Invisibility Cloak*/
+@media (min-width: 751px) and (max-width:950px){
+  .resurrectionstone, .elderwand{
+    display: none;
+  }
+  #elderwand, #resurrectionstone{
+    display: none;
+  }
+}
+
+/*All Three*/
+@media (min-width: 951px) {
+  #elderwand, #resurrectionstone, #invisibilitycloak{
+    display: none;
+  }
+}
+
+/*MAIN TITLE*/
+/*@media (max-width: 655px) and (min-width: 551px) {
+  .deathlytitle h1{
+    font-size: 25px;
+    top: calc(-10vh + 5px);
+  }
+}
+
+@media (max-width: 550px) and (min-width: 10px) {
+  .deathlytitle h1{
+    font-size: 20px;
+  }
+}
