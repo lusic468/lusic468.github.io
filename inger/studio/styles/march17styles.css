@@ -1,0 +1,155 @@
+.pink{
+  background-color: #fbcde8;
+  display: inline-block;
+  position: relative;
+  margin: 20px 20%;
+  width: 60%;
+  min-width: 500px;
+  height: 500px;
+
+  z-index: 1;
+}
+
+.box{
+  position: absolute;
+}
+
+    .yellow{
+      z-index: 2;
+      width: calc(20% + 10px);
+      height: calc(37% + 20px);
+      background-color: #fff568;
+      bottom: calc(26% - 10px);
+      right: 33%;  }
+
+    .turquoise{
+      z-index: 3;
+      width: 50%;
+      height: 60%;
+      bottom: 3%;
+      right: 3%;
+      background-color: #0cc9df;   }
+
+    .blue{
+      z-index: 4;
+      width: 30%;
+      height: 37%;
+      bottom: 26%;
+      right: 23%;
+      background-color: #2e2ef0;   }
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * */
+
+#top, #bottom, #left, #right {
+	background: #fac9d2;
+	position: fixed;
+	z-index: 10000;}
+
+  #left, #right {
+		top: 0;
+		bottom: 0;
+		width: 20px;}
+
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0;
+		right: 0;
+		height: 20px;}
+
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+#header{
+
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  margin-left: 100px;
+  transform: translate(0%,-50%);
+
+
+}
+
+#mainHeader1{
+
+  color: #fa364a;
+  text-align: left;
+  font-family: 'Inknut Antiqua', serif;
+  text-decoration: none;
+  font-weight:400;
+  font-size: 54px;
+
+}
+
+#mainHeader2{
+
+  color: darkgrey;
+  text-align: left;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  text-decoration: none;
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 5px;
+  line-height: 36px;
+
+}
+
+#body{
+
+  position: absolute;
+	margin: 125px 0 125px 400px;
+  width: 60%;
+  min-width: 850px;
+
+	font-family: 'Inknut Antiqua', serif;
+  font-weight: 400;
+	font-size: 16px;
+	line-height: 32px;
+
+}
+
+h1{
+
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 400;
+
+	color: #fa364a;
+	font-size: 32px;
+	line-height: 48px;
+
+}
+
+h2{
+
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 32px;
+
+}
+
+h3 {
+
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+a {
+	text-decoration: none;
+	color: #262626;
+}
+
+a:hover{
+	color: #fa364a;
+}
