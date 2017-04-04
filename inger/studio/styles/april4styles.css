@@ -1,0 +1,261 @@
+
+
+
+
+
+
+
+
+
+
+
+/* * * * * * * * * * * * * * * * */
+*{
+  font-size: 0;
+}
+
+#top, #bottom, #left, #right {
+	background: #fac9d2;
+	position: fixed;
+	z-index: 10000;}
+
+  #left, #right {
+		top: 0;
+		bottom: 0;
+		width: 20px;}
+
+		#left { left: 0; }
+		#right { right: 0; }
+
+	#top, #bottom {
+		left: 0;
+		right: 0;
+		height: 20px;}
+
+		#top { top: 0; }
+		#bottom { bottom: 0; }
+
+#header{
+
+  position: fixed;
+  top: 50%;
+  left: 0%;
+  margin-left: 100px;
+  transform: translate(0%,-50%);
+
+
+}
+
+#mainHeader1{
+
+  color: #fa364a;
+  text-align: left;
+  font-family: 'Inknut Antiqua', serif;
+  text-decoration: none;
+  font-weight:400;
+  font-size: 54px;
+
+}
+
+#mainHeader2{
+
+  color: darkgrey;
+  text-align: left;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  text-decoration: none;
+  padding-left: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 5px;
+  line-height: 36px;
+
+}
+
+body{
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  min-width: 600px;
+
+	font-family: courier, serif;
+  font-weight: 400;
+	font-size: 16px;
+	line-height: 32px;
+
+}
+
+p{
+  font-size: 16px;
+}
+
+h1{
+
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 400;
+
+	color: #fa364a;
+	font-size: 32px;
+	line-height: 48px;
+
+}
+
+h2{
+
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 32px;
+
+}
+
+h3 {
+
+	font-family: 'Inknut Antiqua', serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+a {
+	text-decoration: none;
+	color: #262626;
+}
+
+a:hover{
+	color: #fa364a;
+}
+
+
+
+.title{
+  position: fixed;
+  font-family: "Montserrat", helvetica, serif;
+  color: blue;
+  font-size: 30px;
+  left: 50%;
+  top: 100px;
+  transform: translate(-50%, 0%);
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+
+.about{
+  position: absolute;
+  font-weight: 400;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 70vw;
+}
+
+.clockcontainer{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 800px;
+  width: 60vw;
+  height: 30vw;
+  max-height: 30vw;
+  overflow: hidden;
+}
+
+.leftcircle, .rightcircle{
+  display: inline-block;
+  border: 10px solid blue;
+  border-radius: 100%;
+  width: calc(50% - 20px);
+  height: calc(100% - 20px);
+}
+
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.dot{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: blue;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.leftseconds-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+}
+
+.leftminutes-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+}
+
+.rightseconds-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+
+.rightminutes-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+
+.seconds {
+  background: blue;
+  height: 40%;
+  left: 49%;
+  position: absolute;
+  top: 10%;
+  transform-origin: -49% 90%;
+  width: 5px;
+  z-index: 8;
+}
+
+.minutes {
+  background: blue;
+  height: 30%;
+  left: 49%;
+  position: absolute;
+  top: 20%;
+  transform-origin: -49% 80%;
+  width: 10px;
+  z-index: 8;
+}
+
+.leftseconds-container {
+  animation: rotate 60s infinite steps(60);
+}
+
+.rightseconds-container {
+  animation: rotate 61s infinite steps(60);
+}
+
+.leftminutes-container {
+  animation: rotate 360s infinite linear;
+}
+
+.rightminutes-container {
+  animation: rotate 380s infinite linear;
+}
