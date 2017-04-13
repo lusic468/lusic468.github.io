@@ -118,11 +118,13 @@ h3 {
 }
 
 a {
+  font-size: 16px;
 	text-decoration: none;
-	color: #262626;
+	color: transparent;
 }
 
 a:hover{
+  font-size: 16px;
 	color: #fa364a;
 }
 
@@ -134,7 +136,7 @@ a:hover{
   color: blue;
   font-size: 30px;
   left: 50%;
-  top: 100px;
+  top: 5vh;
   transform: translate(-50%, 0%);
   color: black;
   text-transform: uppercase;
@@ -148,7 +150,7 @@ a:hover{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: transparent;
   width: 70vw;
 }
 
@@ -160,7 +162,7 @@ a:hover{
   max-width: 800px;
   width: 60vw;
   height: 30vw;
-  max-height: 30vw;
+  max-height: 400px;
   overflow: hidden;
 }
 

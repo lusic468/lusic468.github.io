@@ -13,16 +13,18 @@ $(document).ready(function(){
       $(".seconds").css("background", "transparent");
       $(".about").css("color", "black");
       $(".dot").css("background", "transparent");
+      $("a").css("color", "#fa364a");
     });
 
-    $(".clockcontainer").mouseleave(function(){
+    $(".about").mouseleave(function(){
       console.log("About is evaded.");
       $(".leftcircle").css("border", "10px solid blue");
       $(".rightcircle").css("border", "10px solid blue");
       $(".minutes").css("background", "blue");
       $(".seconds").css("background", "blue");
-      $(".about").css("color", "white");
+      $(".about").css("color", "transparent");
       $(".dot").css("background", "blue");
+      $("a").css("color", "transparent");
     });
 
 });
