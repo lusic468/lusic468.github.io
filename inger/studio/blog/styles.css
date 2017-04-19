@@ -1,0 +1,108 @@
+a {
+  text-decoration: none;
+}
+
+
+.siteTitle, h1{
+
+    font-family: 'Titillium Web', helvetica, sans-serif;
+    letter-spacing: 10px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+
+}
+
+    .black{
+      position: fixed;
+      right: 100px;
+      top: 100px;
+      z-index: 100;
+      color: black;
+    }
+
+    .purple{
+      position: fixed;
+      right: 103px;
+      top: 103px;
+      z-index: 99;
+      color: #ccccff;
+    }
+
+    .red{
+      position: fixed;
+      right: 106px;
+      top: 106px;
+      color: #ff1841;
+      z-index: 98;
+    }
+
+.navigation {
+
+  position: fixed;
+  text-align: right;
+  right: 100px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  font-family: 'Titillium Web', helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+    .navigation a{
+      color: black;
+    }
+    .navigation a:hover{
+      color: red;
+    }
+
+
+.Heading1{
+  font-family: "Titillium Web", helvetica, sans-serif;
+  position: fixed;
+  left: 10vw;
+  top: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-size: 50px;
+  letter-spacing: 20px;
+}
+
+.headingline{
+  height: 15px;
+  width: 90vw;
+  top: 90px;
+  right: 0;
+  background-color: black;
+  display: inline-block;
+  position: fixed;
+}
+
+.copy{
+  position: absolute;
+  top: 100px;
+  overflow: scroll;
+  /*--DELETE ONCE THE IFRAMES ARE SORTED OUT*/
+  margin: 0 100px;
+}
+
+.body{
+  font-family: 'Crimson Text', garamond, serif;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 400px;
+
+  font-variant-ligatures: common-ligatures;
+  -moz-font-feature-settings: "liga", "clig";
+  -webkit-font-feature-settings: "liga", "clig";
+  font-feature-settings: "liga", "clig";
+
+  font-variant-numeric: oldstyle-nums;
+  -moz-font-feature-settings: "onum";
+  -webkit-font-feature-settings: "onum";
+  font-feature-settings: "onum";
+
+}
