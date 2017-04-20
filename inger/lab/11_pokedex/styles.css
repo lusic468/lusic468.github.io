@@ -22,3 +22,9 @@ body{
   height: 40px;
   display: inline-block;
 }
+
+audio {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
