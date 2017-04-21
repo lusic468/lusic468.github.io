@@ -20,11 +20,18 @@ body{
 .space{
   width: 40px;
   height: 40px;
+  margin-top: 25px;
   display: inline-block;
+  background-image: url("pokedex/bush.png");
+  border: none;
 }
 
 audio {
   position: fixed;
   bottom: 0;
   right: 0;
+}
+
+img{
+  border: transparent;
 }

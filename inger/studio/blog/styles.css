@@ -2,98 +2,239 @@ a {
   text-decoration: none;
 }
 
+/*ADOBE CASLON PRO*/
+@font-face{
+  font-family: "Caslon", garamond, serif;
+  src: url('CaslonRegular.otf')
+  format('open-type');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Caslon", garamond, serif;
+  src: url('CaslonItalic.otf')
+  format('open-type');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: "Caslon", garamond, serif;
+  src: url('CaslonSemibold.otf')
+  format('open-type');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "Caslon", garamond, serif;
+  src: url('CaslonSemiboldItalic.otf')
+  format('open-type');
+  font-weight: 600;
+  font-style: italic;
+}
+
+/*MAISON NEUE*/
+@font-face{
+  font-family: "Maison Neue", helvetica, sans-serif;
+  src: url('maison-neue-light.ttf')
+  format('true-type');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Maison Neue", helvetica, sans-serif;
+  src: url('maison-neue-light-italic.ttf')
+  format('true-type');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face{
+  font-family: "Maison Neue", helvetica, sans-serif;
+  src: url('maisonneuebook.ttf')
+  format('true-type');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face{
+  font-family: "Maison Neue", helvetica, sans-serif;
+  src: url('maisonneuebookitalic.ttf')
+  format('true-type');
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face{
+  font-family: "Maison Neue", helvetica, sans-serif;
+  src: url('MaisonNeue-Demi.ttf')
+  format('true-type');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face{
+  font-family: "Maison Neue", helvetica, sans-serif;
+  src: url('MaisonNeue-DemiItalic.ttf')
+  format('true-type');
+  font-weight: 700;
+  font-style: italic;
+}
+
 
 .siteTitle, h1{
 
-    font-family: 'Titillium Web', helvetica, sans-serif;
+    font-family: 'Maison Neue','Titillium Web', helvetica, sans-serif;
     letter-spacing: 10px;
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 700;
 
 }
 
     .black{
       position: fixed;
-      right: 100px;
-      top: 100px;
+      right: 25vw;
+      top: 65px;
       z-index: 100;
       color: black;
+      text-align: right;
     }
 
     .purple{
       position: fixed;
-      right: 103px;
-      top: 103px;
+      right: calc(25vw + 2px);
+      top: 67px;
       z-index: 99;
       color: #ccccff;
+      text-align: right;
     }
 
     .red{
       position: fixed;
-      right: 106px;
-      top: 106px;
-      color: #ff1841;
+      right: calc(25vw + 4px);
+      top: 69px;
+      color: #f53141;
       z-index: 98;
+      text-align: right;
     }
 
 .navigation {
 
   position: fixed;
   text-align: right;
-  right: 100px;
-  top: 50%;
-  transform: translate(0%, -50%);
-  font-family: 'Titillium Web', helvetica, sans-serif;
-  font-weight: 600;
-  font-size: 40px;
+  right: 5vw;
+  bottom: 100px;
+  font-family: 'Maison Neue', 'Titillium Web', helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
   line-height: 40px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+
+  z-index: 95;
 }
 
     .navigation a{
       color: black;
     }
     .navigation a:hover{
-      color: red;
+      text-decoration: line-through;
     }
 
-
-.Heading1{
-  font-family: "Titillium Web", helvetica, sans-serif;
+.postnavigation{
   position: fixed;
+  text-align: center;
+  left: 5vw;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Maison Neue', 'Titillium Web', helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+    .postnavigation a{
+      color: black;
+    }
+
+mark{
+  background-color: white;
+}
+
+.portal{
+  position: absolute;
+  height: calc(100vh - 130px);
+  width: 65vw;
   left: 10vw;
-  top: 0;
-  font-weight: 400;
+  top: 130px;
+  border: none;
+}
+
+
+.heading1{
+  font-family: 'Maison Neue', "Titillium Web", helvetica, sans-serif;
+  position: sticky;
+  right: 0;
+  margin: 0;
+  font-weight: 300;
   text-transform: uppercase;
+  line-height: 40px;
+  font-size: 30px;
+  letter-spacing: 10px;
+  text-align: right;
+
+  z-index: 90;
+}
+
+.heading3{
+  font-family: 'Crimson Text', garamond, sans-serif;
+  font-weight: 400;
+  font-style: italic;
   line-height: 50px;
-  font-size: 50px;
-  letter-spacing: 20px;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-align: center;
 }
 
 .headingline{
-  height: 15px;
-  width: 90vw;
-  top: 90px;
-  right: 0;
+  height: 10px;
+  margin-top: 10px;
+  width: 100vw;
+  float: right;
+  background-color: black;
+  display: inline-block;
+  position: sticky;
+}
+/*
+.headinglinesticky{
+  height: 10px;
+  width: 65vw;
+  float: right;
+  left: 10vw;
+  top: 130px;
   background-color: black;
   display: inline-block;
   position: fixed;
-}
+  z-index: 92;
+}*/
+
+    /*.headingline, .sticky{
+      position: fixed;
+      top: 0;
+    }*/
 
 .copy{
   position: absolute;
-  top: 100px;
-  overflow: scroll;
+  margin-top: 0;
+  margin-bottom: 100px;
   /*--DELETE ONCE THE IFRAMES ARE SORTED OUT*/
-  margin: 0 100px;
 }
 
 .body{
-  font-family: 'Crimson Text', garamond, serif;
-  font-size: 50px;
-  line-height: 60px;
-  font-weight: 400px;
+  font-family: 'Caslon', 'Crimson Text', garamond, serif;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  display: inline-block;
+
 
   font-variant-ligatures: common-ligatures;
   -moz-font-feature-settings: "liga", "clig";
@@ -106,3 +247,50 @@ a {
   font-feature-settings: "onum";
 
 }
+
+    .quote {
+      margin: 0 50px;
+      text-align: center;
+      font-size: 45px;
+      font-weight: 600;
+    }
+
+    .body a{
+      color: black;
+      text-decoration: line-through;
+    }
+
+    .body a:hover{
+      text-decoration: none;
+    }
+
+    .cobey {
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+      display: inline-block;
+    }
+
+    .bibliography{
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    .bibliography a{
+      text-decoration: none;
+    }
+
+    .abouttitle{
+      text-align: left;
+      font-weight: 700;
+      font-size: 50px;
+      margin-top: 20px;
+      margin-bottom: -35px;
+    }
+
+  img.cursorbuddy {
+        display: none;
+        position: absolute;
+        width: 30vw;
+    }

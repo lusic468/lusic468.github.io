@@ -7,34 +7,36 @@
 
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i|Titillium+Web:400,400i,600,600i,700,700i" rel="stylesheet">
-
+    <script src="../jquery-3.1.1.min.js"></script>
   </head>
 
   <body>
 
-    <div class="black"><h1>IN (QUEER) THEORY,</h1></div>
+    <a class="title" href="http://www.cobeyl.us/inger/studio/blog/index.html"><div class="black"><h1>IN (QUEER) THEORY,</h1></div></a>
     <div class="purple"><h1>IN (QUEER) THEORY,</h1></div>
     <div class="red"><h1>IN (QUEER) THEORY,</h1></div>
 
-    <div class="navigation">
-      <a href="http://www.cobeyl.us/inger/studio/blog/about.html">about</a>
-      <div>blog</div>
-        <a id="post" href="http://www.cobeyl.us/inger/studio/blog/postone.html">everything is gay.&nbsp;&nbsp;</a><br>
-        <a id="post" href="http://www.cobeyl.us/inger/studio/blog/posttwo.html">repression was the beginning.&nbsp;&nbsp;</a><br>
-        <a id="post" href="http://www.cobeyl.us/inger/studio/blog/postthree.html">immortality allows an automated sex-change.&nbsp;&nbsp;</a><br>
-        <a id="post" href="http://www.cobeyl.us/inger/studio/blog/postfour.html">performance means two things.&nbsp;&nbsp;</a><br>
-        <a id="post" href="http://www.cobeyl.us/inger/studio/blog/postfive.html">post title #5&nbsp;&nbsp;</a><br>
-        <a id="post" href="http://www.cobeyl.us/inger/studio/blog/postsix.html">post title #6&nbsp;&nbsp;</a><br>
-        <a id="post" href="http://www.cobeyl.us/inger/studio/blog/postseven.html">post title #7&nbsp;&nbsp;</a><br>
-        <a id="post" href="http://www.cobeyl.us/inger/studio/blog/posteight.html">post title #8&nbsp;&nbsp;</a><br>
-      <a href="http://www.cobeyl.us/inger/studio/blog/archive.html">archive</a>
+    <div class="postnavigation">
+        <a class="post1" id="post1" href="postone.html" target="iframe">1</a><br><br>
+        <a class="post2" id="post2" href="posttwo.html" target="iframe">2</a><br><br>
+        <a class="post3" id="post3" href="postthree.html" target="iframe">3</a><br><br>
+        <a class="post4" id="post4" href="postfour.html" target="iframe">4</a><br><br>
+        <a class="post5" id="post5" href="postfive.html" target="iframe">5</a><br><br>
+        <a class="post6" id="post6" href="postsix.html" target="iframe">6</a><br><br>
+        <a class="post7" id="post7" href="postseven.html" target="iframe">7</a><br><br>
+        <a class="post8" id="post8" href="posteight.html" target="iframe">8</a>
     </div>
 
-    <!--
-    <iframe class="post" id="postOne">
-    </iframe>
-    -->
+    <div class="navigation"><mark>
+      <a href="about.html" id="about" class="about" target="iframe">about</a><br>
+      <a href="blog.html" id="blog" class="blog" target="iframe">blog</a><br>
+      <a href="archive.html" id="archive" class="archive" target="iframe">archive</a></mark><br>
+    </div>
+    <div class="portalcontainer">
+      <iframe id="portal" class="portal"></iframe>
+    </div>
 
+    <script src="blogscripts.js"></script>
   </body>
 
 </html>
