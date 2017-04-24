@@ -87,14 +87,14 @@ body, html{
   height: 100%;
 }
 
-/*.bg {
+.bg {
   background-image: url("background.gif");
 
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}*/
+}*
 
 
 .siteTitle, h1{
@@ -132,6 +132,16 @@ body, html{
       color: #f53141;
       z-index: 98;
       text-align: right;
+    }
+
+    .titlebackground{
+      width: 475px;
+      height: 47px;
+      z-index: 97;
+      background-color: white;
+      position: fixed;
+      top: 75px;
+      right: calc(25.5vw);
     }
 
 .navigation {

@@ -63,6 +63,7 @@ $(document).ready(function(){
           e.preventDefault();
 
           $(".postnavigation").css("display","none");
+          $(".bg").css("background-image", "none");
           $("#portal").attr("src", $(this).attr("href"));
       })
 
@@ -70,6 +71,7 @@ $(document).ready(function(){
           e.preventDefault();
 
           $(".postnavigation").css("display","block");
+          $(".bg").css("background-image", "none");
           $("#portal").attr("src", $(this).attr("href"));
       })
 
@@ -77,6 +79,7 @@ $(document).ready(function(){
           e.preventDefault();
 
           $(".postnavigation").css("display","none");
+          $(".bg").css("background-image", "none");
           $("#portal").attr("src", $(this).attr("href"));
       })
 
