@@ -1,8 +1,6 @@
 $(document).ready(function(){
   console.log("Hey again.");
 
-
-
   $('.orlandobook').mousemove(function(e) {
         console.log("mousemove works");
 
@@ -58,5 +56,27 @@ $(document).ready(function(){
       $img = $("#" + $(this).data('image-id'))
       $img.hide();
   });
+
+
+
+  /*$(window).scroll(function() {
+      console.log("You scrollin'");
+      console.log($(window).scrollTop());
+
+      var postheight = $(".postheading").height();
+
+      if ($(window).scrollTop() > postheight) {
+          console.log("You made it past the title.");
+
+          $(".headingline").addClass("stickyline");
+
+      }
+
+      if ($(window).scrollTop() < postheight) {
+
+          $(".headingline").removeClass("stickyline");
+
+      }
+    });*/
 
 });

@@ -207,7 +207,7 @@ iframe{
   margin: 0;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 40px;
+  line-height: 50px;
   font-size: 45px;
   letter-spacing: 10px;
   text-align: right;
@@ -227,30 +227,14 @@ iframe{
 
 .headingline{
   height: 10px;
-  margin-top: 10px;
   width: 100vw;
-  float: right;
+  float: left;
   background-color: black;
   display: inline-block;
   position: sticky;
+  top: 0;
 }
-/*
-.headinglinesticky{
-  height: 10px;
-  width: 65vw;
-  float: right;
-  left: 10vw;
-  top: 130px;
-  background-color: black;
-  display: inline-block;
-  position: fixed;
-  z-index: 92;
-}*/
 
-    /*.headingline, .sticky{
-      position: fixed;
-      top: 0;
-    }*/
 
 .copy{
   position: absolute;

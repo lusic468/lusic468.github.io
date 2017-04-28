@@ -203,29 +203,3 @@ $(document).ready(function(){
       });
 
   });
-
-
-
-
-
-
-/*var clickedONE = false;
-$("#post1").click(function() {
-  console.log("You clicked on post8.");
-
-  if (clickedONE == false) {
-    console.log("You made it!");
-
-    $('#post1').attr('src', 'postone.html');
-
-    clickedBlog = true;
-
-  } else{
-    console.log("Posts are gone.");
-
-    $(".post").css("display", "none");
-
-    clickedBlog = false;
-  }
-});
-*/
