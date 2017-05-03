@@ -240,6 +240,7 @@ iframe{
   position: absolute;
   margin-top: 0;
   margin-bottom: 75px;
+
   /*--DELETE ONCE THE IFRAMES ARE SORTED OUT*/
 }
 
@@ -296,6 +297,10 @@ iframe{
       text-decoration: none;
     }
 
+    .bibliography a:hover{
+      color: #f53141;
+    }
+
     .abouttitle{
       text-align: left;
       font-weight: 700;
@@ -315,3 +320,8 @@ iframe{
           position: absolute;
           height: 40px;
       }
+
+
+.navLineNorth{
+  height: 0;
+}
