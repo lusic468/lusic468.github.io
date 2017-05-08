@@ -1,313 +1,324 @@
 $(document).ready(function(){
   console.log("Hey again.");
 
-  $('.orlandobook').mousemove(function(e) {
-        console.log("mousemove works");
+if (window.screen.width > 480) {
+    $('.orlandobook').mousemove(function(e) {
+          console.log("mousemove works");
 
-      var $img = $("#" + $(this).data('image-id'))
-      $img.show();
-      $img.offset({
-          top: e.pageY + 20,
-          left: e.pageX + 20
+        var $img = $("#" + $(this).data('image-id'))
+        $img.show();
+        $img.offset({
+            top: e.pageY + 20,
+            left: e.pageX + 20
+        });
+    }).mouseleave(function() {
+        $img = $("#" + $(this).data('image-id'))
+        $img.hide();
+    });
+
+    $('.orlandoscene').mousemove(function(e) {
+          console.log("mousemove works");
+
+        var $img = $("#" + $(this).data('image-id'))
+        $img.show();
+        $img.offset({
+            top: e.pageY + 20,
+            left: e.pageX + 20
+        });
+    }).mouseleave(function() {
+        $img = $("#" + $(this).data('image-id'))
+        $img.hide();
+    });
+
+    $('.laszlo').mousemove(function(e) {
+          console.log("mousemove works");
+
+        var $img = $("#" + $(this).data('image-id'))
+        $img.show();
+        $img.offset({
+            top: e.pageY + 20,
+            left: e.pageX + 20
+        });
+    }).mouseleave(function() {
+        $img = $("#" + $(this).data('image-id'))
+        $img.hide();
+    });
+
+    $('.roomessay').mousemove(function(e) {
+          console.log("mousemove works");
+
+        var $img = $("#" + $(this).data('image-id'))
+        $img.show();
+        $img.offset({
+            top: e.pageY + 20,
+            left: e.pageX + 20
+        });
+    }).mouseleave(function() {
+        $img = $("#" + $(this).data('image-id'))
+        $img.hide();
+    });
+
+    $('.gawd').mousemove(function(e) {
+          console.log("mousemove works");
+
+        var $img = $("#" + $(this).data('image-id'))
+        $img.show();
+        $img.offset({
+            top: e.pageY + 20,
+            left: e.pageX + 20
+        });
+    }).mouseleave(function() {
+        $img = $("#" + $(this).data('image-id'))
+        $img.hide();
+    });
+
+    $('.rupaul').mousemove(function(e) {
+          console.log("mousemove works");
+
+        var $img = $("#" + $(this).data('image-id'))
+        $img.show();
+        $img.offset({
+            top: e.pageY + 20,
+            left: e.pageX + 20
+        });
+    }).mouseleave(function() {
+        $img = $("#" + $(this).data('image-id'))
+        $img.hide();
+    });
+
+      $('.roxane').mousemove(function(e) {
+            console.log("mousemove works");
+
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
       });
-  }).mouseleave(function() {
-      $img = $("#" + $(this).data('image-id'))
-      $img.hide();
-  });
 
-  $('.orlandoscene').mousemove(function(e) {
-        console.log("mousemove works");
+      $('.badfeminist').mousemove(function(e) {
+            console.log("mousemove works");
 
-      var $img = $("#" + $(this).data('image-id'))
-      $img.show();
-      $img.offset({
-          top: e.pageY + 20,
-          left: e.pageX + 20
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
       });
-  }).mouseleave(function() {
-      $img = $("#" + $(this).data('image-id'))
-      $img.hide();
-  });
 
-  $('.laszlo').mousemove(function(e) {
-        console.log("mousemove works");
+      $('.twelveyears').mousemove(function(e) {
+            console.log("mousemove works");
 
-      var $img = $("#" + $(this).data('image-id'))
-      $img.show();
-      $img.offset({
-          top: e.pageY + 20,
-          left: e.pageX + 20
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
       });
-  }).mouseleave(function() {
-      $img = $("#" + $(this).data('image-id'))
-      $img.hide();
-  });
 
-  $('.roomessay').mousemove(function(e) {
-        console.log("mousemove works");
+      $('.moonlight').mousemove(function(e) {
+            console.log("mousemove works");
 
-      var $img = $("#" + $(this).data('image-id'))
-      $img.show();
-      $img.offset({
-          top: e.pageY + 20,
-          left: e.pageX + 20
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
       });
-  }).mouseleave(function() {
-      $img = $("#" + $(this).data('image-id'))
-      $img.hide();
-  });
 
-  $('.gawd').mousemove(function(e) {
-        console.log("mousemove works");
+      $('.beasts').mousemove(function(e) {
+            console.log("mousemove works");
 
-      var $img = $("#" + $(this).data('image-id'))
-      $img.show();
-      $img.offset({
-          top: e.pageY + 20,
-          left: e.pageX + 20
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
       });
-  }).mouseleave(function() {
-      $img = $("#" + $(this).data('image-id'))
-      $img.hide();
-  });
 
-  $('.rupaul').mousemove(function(e) {
-        console.log("mousemove works");
+      $('.roots').mousemove(function(e) {
+            console.log("mousemove works");
 
-      var $img = $("#" + $(this).data('image-id'))
-      $img.show();
-      $img.offset({
-          top: e.pageY + 20,
-          left: e.pageX + 20
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
       });
-  }).mouseleave(function() {
-      $img = $("#" + $(this).data('image-id'))
-      $img.hide();
-  });
 
-    $('.roxane').mousemove(function(e) {
-          console.log("mousemove works");
+      $('.twelveyears').mousemove(function(e) {
+            console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
+      });
 
-    $('.badfeminist').mousemove(function(e) {
-          console.log("mousemove works");
+      $('.blindside').mousemove(function(e) {
+            console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
+      });
 
-    $('.twelveyears').mousemove(function(e) {
-          console.log("mousemove works");
+      $('.freedomwriters').mousemove(function(e) {
+            console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
+      });
 
-    $('.moonlight').mousemove(function(e) {
-          console.log("mousemove works");
+      $('.precious').mousemove(function(e) {
+            console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
+      });
 
-    $('.beasts').mousemove(function(e) {
-          console.log("mousemove works");
+      $('.modernfamily').mousemove(function(e) {
+            console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
+      });
 
-    $('.roots').mousemove(function(e) {
-          console.log("mousemove works");
+      $('.willandgrace').mousemove(function(e) {
+            console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
+      });
 
-    $('.twelveyears').mousemove(function(e) {
-          console.log("mousemove works");
+      $('.queerasfolk').mousemove(function(e) {
+            console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
+      });
 
-    $('.blindside').mousemove(function(e) {
-          console.log("mousemove works");
+      $('.transparent').mousemove(function(e) {
+            console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
+      });
 
-    $('.freedomwriters').mousemove(function(e) {
-          console.log("mousemove works");
+      $('.hijras').mousemove(function(e) {
+            console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
+      });
 
-    $('.precious').mousemove(function(e) {
-          console.log("mousemove works");
+      $('.baklas').mousemove(function(e) {
+            console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
+      });
 
-    $('.modernfamily').mousemove(function(e) {
-          console.log("mousemove works");
+  }
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
 
-    $('.willandgrace').mousemove(function(e) {
-          console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
 
-    $('.queerasfolk').mousemove(function(e) {
-          console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
 
-    $('.transparent').mousemove(function(e) {
-          console.log("mousemove works");
 
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
 
-    $('.hijras').mousemove(function(e) {
-          console.log("mousemove works");
-
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
-
-    $('.baklas').mousemove(function(e) {
-          console.log("mousemove works");
-
-        var $img = $("#" + $(this).data('image-id'))
-        $img.show();
-        $img.offset({
-            top: e.pageY + 20,
-            left: e.pageX + 20
-        });
-    }).mouseleave(function() {
-        $img = $("#" + $(this).data('image-id'))
-        $img.hide();
-    });
 
 
 

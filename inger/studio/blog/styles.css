@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 a {
   text-decoration: none;
 }
@@ -88,53 +92,79 @@ body, html{
 }
 
 .bg {
-  background-image: url("background.gif");
+  background-image: url("background.png");
 
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
-}*
+  position: fixed;
+  z-index: 2;
+}
+
+.backgroundimagegone {
+  background-color: white;
+  z-index: 10;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
 
 
-.siteTitle, h1{
+.siteTitle{
+  background-color: white;
+  position: fixed;
+  right: 25vw;
+  width: 470px;
+  height: 50px;
+  top: 75px;
+  z-index: 97;
+
+}
+.title, h1{
 
     font-family: 'Maison Neue','Titillium Web', helvetica, sans-serif;
     letter-spacing: 10px;
     font-size: 30px;
     line-height: 30px;
     font-weight: 700;
+    margin-right: -7px;
 
 }
 
     .black{
-      position: fixed;
-      right: 25.5vw;
-      top: 65px;
+      width: 458px;
+      position: absolute;
       z-index: 100;
       color: black;
       text-align: right;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
     }
 
     .purple{
-      position: fixed;
-      right: calc(25.5vw + 2px);
-      top: 67px;
+      width: 458px;
+      position: absolute;
+      top: calc(50% + 2px);
+      transform: translate(-50%, -50%);
+      left: calc(50% - 2px);
       z-index: 99;
       color: #ccccff;
       text-align: right;
     }
 
     .red{
-      position: fixed;
-      right: calc(25.5vw + 4px);
-      top: 69px;
+      width: 458px;
+      position: absolute;
+      top: calc(50% + 4px);
+      left: calc(50% - 4px);
+      transform: translate(-50%, -50%);
       color: #f53141;
       z-index: 98;
       text-align: right;
     }
 
-    .titlebackground{
+    /*.titlebackground{
       width: 475px;
       height: 47px;
       z-index: 97;
@@ -142,7 +172,7 @@ body, html{
       position: fixed;
       top: 75px;
       right: calc(25.5vw);
-    }
+    }*/
 
 .navigation {
   position: fixed;
@@ -176,6 +206,7 @@ body, html{
   font-weight: 600;
   font-size: 20px;
   line-height: 30px;
+  z-index: 90;
 }
 
     .postnavigation a{
@@ -194,9 +225,10 @@ iframe{
   position: fixed;
   height: calc(100vh - 130px);
   width: 65vw;
-  left: 10vw;
+  right: 25vw;
   top: 130px;
   border: none;
+  z-index: 90;
 }
 
 
@@ -216,7 +248,7 @@ iframe{
 }
 
 .heading3{
-  font-family: 'Crimson Text', garamond, sans-serif;
+  font-family: 'Crimson Text', garamond, serif;
   font-weight: 400;
   font-style: italic;
   line-height: 50px;
@@ -240,17 +272,7 @@ iframe{
   position: absolute;
   margin-top: 0;
   margin-bottom: 75px;
-
-  /*--DELETE ONCE THE IFRAMES ARE SORTED OUT*/
-}
-
-.body{
-  font-family: 'Caslon', 'Crimson Text', garamond, serif;
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 400;
-  display: inline-block;
-
+  width: calc(100% - 20px);
 
   font-variant-ligatures: common-ligatures;
   -moz-font-feature-settings: "liga", "clig";
@@ -261,6 +283,16 @@ iframe{
   -moz-font-feature-settings: "onum";
   -webkit-font-feature-settings: "onum";
   font-feature-settings: "onum";
+
+  /*--DELETE ONCE THE IFRAMES ARE SORTED OUT*/
+}
+
+.body{
+  font-family: 'Caslon', 'Crimson Text', garamond, serif;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 400;
+  display: inline-block;
 
 }
 
@@ -313,15 +345,94 @@ iframe{
         display: none;
         position: absolute;
         width: 30vw;
+        z-index: 99;
     }
 
   img.cursorbuddytitle {
           display: none;
           position: absolute;
           height: 40px;
+          z-index: 99;
       }
 
 
 .navLineNorth{
   height: 0;
+}
+
+.navLineSouth{
+  height: 0;
+}
+
+#share-buttons img {
+width: 35px;
+padding: 10px;
+
+border: 0;
+box-shadow: 0;
+display: inline;
+
+}
+
+.sharebuttons{
+  left: 50%;
+  transform: translateX(-30%);
+  position: absolute;
+  display: inline-block;
+}
+
+.fb-share-button{
+
+  width: 73px;
+  height: 28px;
+  margin: 0 5px;
+}
+
+.twitter-share-button{
+  height: 28px;
+  margin: 0 5px;
+}
+
+.powr-comments{
+  width: 75%;
+  display: inline-block;
+  height: 300px;
+  margin-top: 20px;
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+/*PHONE*/
+@media (max-width: 480px) {
+
+  .navigation{
+    text-align: center;
+  }
+
+  .siteTitle{
+    width: 90vw;
+    left: 5vw;
+  }
+
+  .title, h1{
+    font-size: 5vw;
+    letter-spacing: 2vw;
+    text-align: center;
+    margin-right: -10px;
+  }
+
+}
+
+
+@media (min-width: 481px) and (max-width: 840px) {
+  .siteTitle{
+    left: 0;
+  }
 }
