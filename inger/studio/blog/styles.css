@@ -489,6 +489,11 @@ display: inline;
 /*PHONE*/
 @media (max-width: 480px) {
 
+  .scroll-wrapper{
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+  }
+
   .navigation{
     text-align: center;
     bottom: 20px;
