@@ -2,6 +2,9 @@ $(document).ready(function(){
   console.log("Hey again.");
 
 if (window.screen.width > 480) {
+
+    /*ORLANDO*/
+
     $('.orlandobook').mousemove(function(e) {
           console.log("mousemove works");
 
@@ -57,6 +60,8 @@ if (window.screen.width > 480) {
         $img = $("#" + $(this).data('image-id'))
         $img.hide();
     });
+
+    /*LANGUAGE IS A PERPETUATOR*/
 
     $('.gawd').mousemove(function(e) {
           console.log("mousemove works");
@@ -310,6 +315,25 @@ if (window.screen.width > 480) {
           $img.hide();
       });
 
+      $('.michelfoucault').mousemove(function(e) {
+            console.log("mousemove works");
+
+          var $img = $("#" + $(this).data('image-id'))
+          $img.show();
+          $img.offset({
+              top: e.pageY + 20,
+              left: e.pageX + 20
+          });
+      }).mouseleave(function() {
+          $img = $("#" + $(this).data('image-id'))
+          $img.hide();
+      });
+
+
+  }
+
+  if (window.screen.width <= 480) {
+    $("p.cobey").css("marign-bottom","300px");
   }
 
 
